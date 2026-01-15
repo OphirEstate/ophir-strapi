@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "admin_credentials",
+  "info": {
+    "singularName": "admin-credential",
+    "pluralName": "admin-credentials",
+    "displayName": "Admin Credential"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "Password": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
