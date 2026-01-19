@@ -55,10 +55,8 @@
       "default": 0
     },
     "images": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": ["images"]
+      "type": "string",
+      "required": false
     },
     "propertyId": {
       "type": "string",
