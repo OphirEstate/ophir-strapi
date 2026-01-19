@@ -1,3 +1,3 @@
 import { factories } from '@strapi/strapi';
 
-export default factories.createCoreRouter('api::property.property');
+export default factories.createCoreRouter('api::property.property' as any);
