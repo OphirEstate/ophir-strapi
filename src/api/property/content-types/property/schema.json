@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "properties",
+  "info": {
+    "singularName": "property",
+    "pluralName": "properties",
+    "displayName": "Property",
+    "description": "Biens immobiliers"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "rooms": {
+      "type": "integer",
+      "required": true
+    },
+    "bedrooms": {
+      "type": "integer",
+      "required": true
+    },
+    "bathrooms": {
+      "type": "integer",
+      "required": true
+    },
+    "surface": {
+      "type": "integer",
+      "required": true
+    },
+    "price": {
+      "type": "biginteger",
+      "required": true
+    },
+    "views": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "parking": {
+      "type": "integer",
+      "default": 0
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "propertyId": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": ["patrimoine", "offmarket"],
+      "required": true
+    }
+  }
+}
